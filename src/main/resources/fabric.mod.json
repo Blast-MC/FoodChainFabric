@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "foodchain",
+  "version": "${version}",
+  "name": "Foodchain",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "server": [
+      "tech.blastmc.foodchain.Foodchain"
+    ],
+    "cardinal-components": [
+      "tech.blastmc.foodchain.components.Components"
+    ]
+  },
+  "mixins": [
+    "foodchain.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.2",
+    "fabric": "*"
+  },
+  "custom": {
+    "cardinal-components": [
+      "foodchain:tier"
+    ]
+  }
+}
