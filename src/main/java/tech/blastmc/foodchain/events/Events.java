@@ -21,7 +21,6 @@ public class Events {
 
 	private void joinListener() {
 		PlayerJoinCallback.EVENT.register(((player, server) -> {
-			send(player, "Welcome Bitch", "red");
 			TierComponent component = Components.CURRENT_TIER.get(player);
 			Foodchain.playerTiers.put(player.getUuid(), component.getCurrentTier());
 			Foodchain.tellNextTierInfo(player, component.getCurrentTier());
